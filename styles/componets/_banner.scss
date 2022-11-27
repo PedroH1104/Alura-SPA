@@ -1,0 +1,26 @@
+@import '../abstract/variaveis';
+
+.banner {
+    background: url('../imagens/banner.jpeg') 27% center no-repeat;         // 27% tamanho, ao centro, e não repetir
+    min-height: 350px;                                                      // altura minima
+    background-size: cover;                                                 // ocupar todo espaço possível
+    display: flex;                                                          // configurar os elementos internos
+    justify-content: center;                                                // todos elementos ao centro
+    align-items: center;                                                    // alinhamento dos itens com base no centro
+    opacity: 0.9;                                                           // deixar mais transparente
+    .inner-banner {
+        padding: 3rem;
+        background-color: $cor-terciaria;
+        opacity: 0.9;
+        border-radius: 45px;
+        h1 {
+            font-size: $tamanho-do-texto;
+            color: $cor-primaria;
+        }
+        h2 {
+            font-size: $tamanho-do-texto / 2;
+            color: $cor-secundaria;
+        }
+    }
+
+}

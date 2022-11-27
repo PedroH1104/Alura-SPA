@@ -1,0 +1,21 @@
+@import '../abstract/variaveis';
+
+nav {                                             // deixar os links lado a lado no centro da página
+    text-align: center;
+    ul{
+        li{
+            display: inline-block;
+            padding: 1rem;
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: bold;
+                color: $cor-primaria;
+                &:hover {                                       // o & substitui o " a " então ficaria a:hover {
+                    border-bottom: 2px solid $cor-secundaria;
+                }
+            }
+        }
+    }
+}
+
